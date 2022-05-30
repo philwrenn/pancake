@@ -1,0 +1,27 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CURRENT_USER\Software\Clients\StartMenuInternet\Pancake]
+@="Pancake"
+ [HKEY_CURRENT_USER\Software\Clients\StartMenuInternet\Pancake\Capabilities]
+"ApplicationDescription"="Pancake"
+"ApplicationIcon"="C:\\Program Files SA\\pancake\\pancake.exe,0"
+"ApplicationName"="Pancake"
+ [HKEY_CURRENT_USER\Software\Clients\StartMenuInternet\Pancake\Capabilities\FileAssociations]
+; you can add additional filetypes like .pdf if your browser supports it
+".htm"="PancakeHTM"
+".html"="PancakeHTM"
+ [HKEY_CURRENT_USER\Software\Clients\StartMenuInternet\Pancake\Capabilities\Startmenu]
+"StartMenuInternet"="Pancake"
+ [HKEY_CURRENT_USER\Software\Clients\StartMenuInternet\Pancake\Capabilities\URLAssociations]
+; you can add additional protocols like mailto for example
+"http"="PancakeHTM"
+"https"="PancakeHTM"
+ [HKEY_CURRENT_USER\Software\Clients\StartMenuInternet\Pancake\DefaultIcon]
+@="C:\\Program Files SA\\pancake\\pancake.exe,0"
+
+[HKEY_CURRENT_USER\Software\Clients\StartMenuInternet\Pancake\shell]
+
+[HKEY_CURRENT_USER\Software\Clients\StartMenuInternet\Pancake\shell\open]
+
+[HKEY_CURRENT_USER\Software\Clients\StartMenuInternet\Pancake\shell\open\command]
+@="\"C:\\Program Files SA\\pancake\\pancake.exe\""

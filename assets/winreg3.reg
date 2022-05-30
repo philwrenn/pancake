@@ -1,0 +1,20 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CURRENT_USER\Software\Classes\PancakeHTM]
+@="Pancake Handler"
+"AppUserModelId"="Pancake"
+
+[HKEY_CURRENT_USER\Software\Classes\PancakeHTM\Application]
+"AppUserModelId"="Pancake"
+"ApplicationIcon"="C:\\Program Files SA\\pancake\\pancake.exe,0"
+"ApplicationName"="Pancake"
+"ApplicationDescription"="Browse the web"
+"ApplicationCompany"="Pancake"
+
+[HKEY_CURRENT_USER\Software\Classes\PancakeHTM\DefaultIcon]
+@="C:\\Program Files SA\\pancake\\pancake.exe,0"
+[HKEY_CURRENT_USER\Software\Classes\PancakeHTM\shell]
+[HKEY_CURRENT_USER\Software\Classes\PancakeHTM\shell\open]
+[HKEY_CURRENT_USER\Software\Classes\PancakeHTM\shell\open\command]
+; your browser might offer different arguments here - %1 opens just the argument given
+@="\"C:\\Program Files SA\\pancake\\pancake.exe\" \"%1\""
