@@ -1,15 +1,18 @@
 use diesel::prelude::*;
 use diesel::sqlite::SqliteConnection;
 use dotenv::dotenv;
-use std::env;
 
 use super::models::{NewOpenPreference, OpenPreference};
 
 pub fn get_connection() -> SqliteConnection {
     dotenv().ok();
-    let database_url = env::var("DATABASE_URL").expect("DATABASE_URL must be set");
-    SqliteConnection::establish(&database_url)
-        .expect(&format!("Error connecting to {}", database_url))
+    let database_url = dirs::config_dir()
+        .unwrap()
+        .join("pancake")
+        .join("pancake.db");
+
+    SqliteConnection::establish(database_url.to_str().unwrap())
+        .expect("Error connecting to database.")
 }
 
 pub fn add_open_preference<'a>(
